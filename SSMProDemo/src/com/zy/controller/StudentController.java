@@ -28,7 +28,8 @@ public class StudentController {
 	StudentServiceImpl studentService;
 	
 	public void setStudentService(StudentServiceImpl studentService) {
-		this.studentService = studentService;
+//		this.studentService = studentService;
+		System.out.println("这是控制层");
 	}
 
 	/**
