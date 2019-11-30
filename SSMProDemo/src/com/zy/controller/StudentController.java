@@ -28,8 +28,7 @@ public class StudentController {
 	StudentServiceImpl studentService;
 	
 	public void setStudentService(StudentServiceImpl studentService) {
-//		this.studentService = studentService;
-		System.out.println("这是控制层");
+		this.studentService = studentService;
 	}
 
 	/**
@@ -53,7 +52,7 @@ public class StudentController {
 //			使用重定向时用这种方式，找到/student/main.html
 //			return "redirect:/student/main.html";
 		}
-		throw new LoginFailException("用户名或密码不正确");
+		throw new LoginFailException("用户名或密码不正确!!!");
 	}
 	
 	//重定向方式跳转
